@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 // API Configuration
-const API_BASE_URL = process.env.REACT_APP_API_URL || '/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || '';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
