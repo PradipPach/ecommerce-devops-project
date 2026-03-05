@@ -169,7 +169,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: atuljkamble/cloudnautic-backend:latest
+        image: pradippachapol/cloudnautic-backend:latest
         ports:
         - containerPort: 5000
 ```
@@ -238,10 +238,10 @@ jobs:
       run: echo ${{ secrets.DOCKER_PASS }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
 
     - name: Build Backend Image
-      run: docker build -t atuljkamble/cloudnautic-backend:latest backend/
+      run: docker build -t pradippachapol/cloudnautic-backend:latest backend/
 
     - name: Push Backend Image
-      run: docker push atuljkamble/cloudnautic-backend:latest
+      run: docker push pradippachapol/cloudnautic-backend:latest
 ```
 
 ---
